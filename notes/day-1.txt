@@ -1,0 +1,35 @@
+https://forms.gle/VrSubhVqzhFEB64y9
+
+https://github.com/joydip-git/siemens-angular-4thMay2026
+
+https://github.com/joydip-git/siemens-angular-4thMay2026.git
+
+
+JavaScript
+TypeScript - dev mode language
+Node JS
+
+Angular JS 1.x
+
+Angular 2.0
+
+JavaScript based framework to build client side SPA (Single Page Application)
+
+
+s/w:
+	Node JS
+	VS Code
+
+
+JS engine:
+chrome: V8 (C++ opens source JS engine/compiler)
+firefox: spidermonkey
+safari: JS Core (indigo)
+.....
+
+Ryan Dahl -> Node JS
+
+undefined, NaN, null, infinity etc.
+
+
+FEC => Function Execution Context

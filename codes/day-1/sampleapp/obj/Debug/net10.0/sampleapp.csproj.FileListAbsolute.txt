@@ -1,0 +1,15 @@
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\bin\Debug\net10.0\sampleapp.exe
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\bin\Debug\net10.0\sampleapp.deps.json
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\bin\Debug\net10.0\sampleapp.runtimeconfig.json
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\bin\Debug\net10.0\sampleapp.dll
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\bin\Debug\net10.0\sampleapp.pdb
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\sampleapp.GeneratedMSBuildEditorConfig.editorconfig
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\sampleapp.AssemblyInfoInputs.cache
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\sampleapp.AssemblyInfo.cs
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\sampleapp.csproj.CoreCompileInputs.cache
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\sampleapp.sourcelink.json
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\sampleapp.dll
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\refint\sampleapp.dll
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\sampleapp.pdb
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\sampleapp.genruntimeconfig.cache
+E:\trainings\siemens-angular-4thMay2026\codes\day-1\sampleapp\obj\Debug\net10.0\ref\sampleapp.dll

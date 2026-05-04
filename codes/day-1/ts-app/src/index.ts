@@ -1,6 +1,17 @@
 import { numbers } from "./data";
+import { employees } from "./models/employees";
 import { Person } from "./types";
 import { add, invoke, test } from "./utility";
+
+employees
+    .map(
+        e => {
+            e.calculateSalary()
+            return e
+        })
+    .filter(e => e.totalPay >= 10000)
+    .forEach(e => console.log(e.name))
+
 
 numbers
     .filter((ele) => ele > 100)

@@ -92,4 +92,25 @@ tsconfig.json -> config file for TSC
 1. manual
 2. tsc command
 	>node_modules/.bin/tsc --init
+
+Angular CLI:
+tool to create, run, build (prod and dev)  angular app
+
+command to install:
+>npm i @angular/cli --location=global
+
+angular packages:
+	complete dependencies:
+	1. @angular/core
+	2. @angular/common and @angular/common/http
+	3. @angular/routing
+	4. @angular/platform-browser
+	5. @angular/platform-browser-dynamic
+	6. rxjs
+	7. zone.js
+
+TS -> JS
+JS -> bundled (webpack)
+serve -> running a dev server and serving the bundle (webpack dev server)
+	
 	

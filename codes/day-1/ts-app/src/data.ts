@@ -1,0 +1,1 @@
+export const numbers: number[] = [0, 4, 2, 6, 5, 1, 7, 9, 8, 3]

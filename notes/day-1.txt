@@ -20,7 +20,6 @@ s/w:
 	Node JS
 	VS Code
 
-
 JS engine:
 chrome: V8 (C++ opens source JS engine/compiler)
 firefox: spidermonkey
@@ -29,7 +28,68 @@ safari: JS Core (indigo)
 
 Ryan Dahl -> Node JS
 
-undefined, NaN, null, infinity etc.
+
 
 
 FEC => Function Execution Context
+
+
+JS data types:
+number, string, Boolean, object and function
+keywords: undefined, 
+	  NaN, null, infinity etc. (value)
+
+operators:
+	strict equality: ===
+	strict inequality: !==
+
+control flow statements:
+	if, if..else
+	while
+	do...while
+	switch...case
+	for
+	for...of
+	for...in
+	break
+	continue
+
+callback: reference to the function
+
+TypeScript:
+	1. static type checking
+	2. strict data typing
+
+
+
+transpiler (transformer + compiler) -> TypeScript Compiler (tsc)
+	1. TS => JS
+	2. standard import/export -> Node JS understandable format
+
+
+NPM => Node Package Manager
+npmjs.com => registry.npmjs.org
+
+global (system) -> npm i <package> --location=global
+path: C:\Users\<user-name>\AppData\Roaming\npm
+	folder: node_modules
+	executables: directly
+
+ex: npm i typescript --location=global
+
+local (app directoty) -> npm i <package>
+	folder: node_modules
+	execuatbles: node_modules/.bin	
+
+packge.json (at the root of the app dir) - maintains list of dependency packages
+maintains info about - app package name, version, license, author name, scripts etc.
+
+1. manual
+2. npm command
+	>npm init --yes
+
+tsconfig.json -> config file for TSC
+1. manual
+2. tsc command
+	>node_modules/.bin/tsc --init
+	

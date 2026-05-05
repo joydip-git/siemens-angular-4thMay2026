@@ -1,0 +1,6 @@
+<div>
+    Second Component:
+    <br>
+    <label for="txtData">Enter Some Data: </label>&nbsp;
+    <input type="number" id="txtData" (input)="onSomeDataChanged(+$event.target.value)" [value]="secondData">
+</div>

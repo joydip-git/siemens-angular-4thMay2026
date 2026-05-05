@@ -80,6 +80,42 @@ export class NgFor{
 	}
 }
 
+data passing between components:
+---------------------------------------
+a. nested components: parent and child (nested)
+	i. when they are shallowly nested
+		A. passing data from parent to nested
+			data binding
+			<nested [prop]="parent-code-prop-data">
+		B. passing data from nested to parent
+	
+
+
+
+
+lifecycle:
+---------------
+1. creation and mounting
+------------------------------
+constructor & field initialization
+changes - event - when the component receives data from its parent via an @Inout() decorated property for the first time
+init - event - for writing code for one time update of any property value
+
+2. update
+-------------
+changes - when the component receives data from its parent via an @Inout() decorated property for every other time after mounting
+
+
+3. destroy
+---------------
+destroy
+
+event name	interface name		method name
+-----------------------------------------------------------
+X		OnX			ngOnX
+changes		OnChanges		ngOnChanges
+init		OnInit			ngOnInit
+destroy		OnDestroy		ngOnDestroy
 
 http://localhost:4200 -> http://localhost:4200/home
 http://localhost:4200/login?returnUrl=products/all
@@ -91,6 +127,12 @@ http://localhost:4200/products/edit/1
 http://localhost:4200/products/add
 
 http://localhost:4200/home
+
+{
+	x:{currentValue:, firstChange:},
+	y:{},
+	z:{}
+}
 
 
 	

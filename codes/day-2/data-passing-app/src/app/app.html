@@ -1,0 +1,11 @@
+<h2>Data Passing between components</h2>
+<br>
+<button (click)="increase()" type="button">Increase</button>
+&nbsp;&nbsp;
+<button (click)="toggle()" type="button">{{show?'Hide':'Show'}}</button>
+<br>
+@if(show){
+<app-first [dataValue]="data" [dataValue1]="data"></app-first>
+}
+<br>
+<app-second (someDataChanged)="updateData($event)"></app-second>

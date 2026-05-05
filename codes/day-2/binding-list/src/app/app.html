@@ -1,0 +1,28 @@
+<h2>Binding List</h2>
+<br>
+<!-- <ng-template #alternate>
+  <span>No names</span>
+</ng-template>
+
+<ul *ngIf="names.length>0;else alternate">
+  <li *ngFor="let name of names">
+    {{name}}
+  </li>
+</ul> -->
+
+@if (names.length>0) {
+<ul>
+  @for(name of names;track $index){
+  <li>{{name}}</li>
+  }
+</ul>
+}
+@else{
+<span>No names</span>
+}
+<br>
+<ol>
+  @for(value of [10,21,32,43];track $index){
+  <li>{{value}}</li>
+  }
+</ol>

@@ -61,5 +61,36 @@ example:
 data=signal(0)
 computedData = computed( ()=> this.data()*2)
 
+directive:
+	used as an attribute of any element to extend the behavior of an existing element
+
+	a. structural directive:
+		used as an attribute and manipulates the DOM
+		they start with *
+		*ngIf, *ngFor, *ngIfElse, *ngSwitch
+
+	b. attribute directive
+	c. component directive -> component, used as a custom HTML tag
+
+@Directive({
+	selector:'[ngFor]'
+})
+export class NgFor{
+	method(expr,template){
+	}
+}
+
+
+http://localhost:4200 -> http://localhost:4200/home
+http://localhost:4200/login?returnUrl=products/all
+
+
+http://localhost:4200/products/all
+http://localhost:4200/products/view/1
+http://localhost:4200/products/edit/1
+http://localhost:4200/products/add
+
+http://localhost:4200/home
+
 
 	

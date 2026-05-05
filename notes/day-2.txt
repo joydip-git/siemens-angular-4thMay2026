@@ -27,7 +27,39 @@ form data handling
 	syntax: <element (event)="method-in-code([args])">
 
 Signal:
-	
+	it is ued to inform angular about change in property value in a component or components. the change in property value might occur due to events or asynchronous method call etc..
+        signals tell angular abouthe precise place and the change took place and accordingly angular updates the UI/template/view
+	when you create a signal in a component a component actually ends up subscribing to that signal. any change in the signal value will immediately inform angular about the component property change.
+	signals are of different type:
+	a. writable signal
+	b. computed signal (kind of read-only signal)
+
+writable signal:
+-------------------
+writable signal is created by calling the "signal()" method from @angular/core package.
+
+update the value in writable signal:
+-------------------------------------------
+1. set() method		-> pass a new value
+2. update() method	-> pas a callback function which will be called by the signal and pass the current value in the signal. you can then recalculate a new value and return it to the signal.
+
+example:
+message = signal('old message') -> writable signal
+message.set('new message')
+
+value = signal(0)
+value.update( (current) => current+1 )
+
+computed signal:
+---------------------
+	a signal whose value depends on another value or signal. 
+	if the dependency changes, immediately the callback function passed to the computed signal will be invoked and it will return a computed signal with a new value.
+
+computed signal is created by calling the "computed()" method from @angular/core package.
+
+example:
+data=signal(0)
+computedData = computed( ()=> this.data()*2)
 
 
 	

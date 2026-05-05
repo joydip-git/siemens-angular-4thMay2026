@@ -1,0 +1,33 @@
+Angular Features:
+-----------------------------------
+component
+passing data between the template and code of the same component:
+	binding - data and event binding
+
+passing data between components
+	- nested components
+	- routed components
+service
+pipe
+directive
+UI update: zone.js and signal
+dependency injection  framework
+routing
+Http Requests
+form data handling
+....
+
+
+1. Binding:
+	a. Data Binding: technique to bind (pass) a data from component code to the same component template
+	syntax: {{prop-name}} -> interpolation
+		<element [attr]="prop-name"> -> property binding
+	note: property binding does not stringify the property value whereas the interpolation does so.
+	b. event binding: technique to pass data from component template to the same component code
+	syntax: <element (event)="method-in-code([args])">
+
+Signal:
+	
+
+
+	

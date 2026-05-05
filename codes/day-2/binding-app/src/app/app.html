@@ -1,0 +1,25 @@
+<h2>Binding App</h2>
+<br>
+<p>{{message()}}</p>
+<br>
+<div>
+  <label for="txtMessage">Message: </label>&nbsp;
+  <!-- <input type="text" id="txtMessage" [value]="message()" [style.width.px]="widthValue" (input)="updateMessage($event.target.value)"> -->
+  <input type="text" id="txtMessage" [value]="message()" [style.width.px]="widthValue"
+    (input)="message.set($event.target.value)">
+</div>
+<br>
+<div>
+  <label for="txtValue">Value: &nbsp;</label>
+  <input type="text" id="txtValue" [value]="data()" (input)="data.set(+$event.target.value)">
+</div>
+<br>
+<span>Computed Value: {{computedData()}}</span>
+<br>
+<br>
+<div>
+  <label for="txtCounter">Value: &nbsp;</label>
+  <input type="text" id="txtCounter" [value]="counter()">
+</div>
+<br>
+<button (click)="counter.update((currentValue)=>currentValue+1)">Increase</button>

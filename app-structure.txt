@@ -1,0 +1,48 @@
+app structure
+------------------
+
+app
+	app.ts
+	app.html
+	app.css
+	app.spec.ts
+	app.config.ts
+	app-routes.ts
+
+	modules (folder)
+		products (folder)
+			components (folder)
+				product-list (folder)
+					product-list.ts
+					product-list.html
+					product-list.css
+					product-list.spec.ts
+				product-filter (folder)
+					product-filter.ts
+					product-filter.html
+					product-filter.css
+					product-filter.spec.ts
+				product-container (folder)
+					product-container.ts
+					product-container.html
+					product-container.css
+					product-container.spec.ts
+
+			services (folder)
+			pipes (folder)
+			directives (folder)
+			validators (folder)
+
+		auth (folder)
+			components (folder)
+			services (folder)
+			pipes (folder)
+			directives (folder)
+			validators (folder)
+
+		shared (folder)
+			components (folder)
+			services (folder)
+			pipes (folder)
+			directives (folder)
+			validators (folder)

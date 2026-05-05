@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { Product } from '../../../../models/product';
+import { productrecords } from '../../../../data/productrecords';
 
 @Component({
   selector: 'app-product-list',
@@ -7,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.css',
 })
 export class ProductList {
-
+  products = signal<Product[]>(productrecords);
 }

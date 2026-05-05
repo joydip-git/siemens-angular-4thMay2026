@@ -1,1 +1,30 @@
-<p>product-list works!</p>
+<h2>List of Products</h2>
+<br>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody class="table-dark">
+        @for (p of products(); track $index) {
+        <tr>
+            <td>
+                <img [src]="p.imageUrl" alt="NA" class="img-size-style">
+            </td>
+            <td>{{p.productName}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.starRating}}</td>
+            <td>
+                <button class="btn btn-danger">
+                    Delete
+                </button>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

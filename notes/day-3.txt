@@ -9,7 +9,7 @@ service:
 	a. through constructor of the component
 	b. through "inject()" method from "@angular/core"
 
-asynchronity and RxJS
+asynchronity, promise and RxJS
 
 HTTP requests
 @Injectable
@@ -20,3 +20,16 @@ Auth
 	- jwt - RxJS/Signal
 
 Form
+
+
+HttpClient -> built-in service class
+package -> @angular/common/http
+provider -> {provide: HttpClient, useClass: HttpClient}
+	    provideHttpClient()
+
+.get() => Observable<T>
+.put()
+.post()
+.delete()
+....
+

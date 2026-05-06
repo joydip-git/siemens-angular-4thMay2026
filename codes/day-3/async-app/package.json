@@ -1,0 +1,17 @@
+{
+  "name": "async-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:w": "tsc --watch",
+    "app":"node ./dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

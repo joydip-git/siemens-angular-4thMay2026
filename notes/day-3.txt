@@ -1,0 +1,10 @@
+service:
+-------------------
+1. create a service class
+2. create a provider 
+3. register the provider
+	a. component level
+	b. global (in app.config.ts file)
+4. use DI in the component
+	a. through constructor of the component
+	b. through "inject()" method from "@angular/core"

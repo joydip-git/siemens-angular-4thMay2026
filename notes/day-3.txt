@@ -8,3 +8,15 @@ service:
 4. use DI in the component
 	a. through constructor of the component
 	b. through "inject()" method from "@angular/core"
+
+asynchronity and RxJS
+
+HTTP requests
+@Injectable
+
+Routing
+Auth
+	- interceptors
+	- jwt - RxJS/Signal
+
+Form

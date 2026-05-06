@@ -1,0 +1,21 @@
+<p>
+  {{name|lowercase}}
+</p>
+<br>
+<p>
+  {{lower|uppercase}}
+</p>
+<br>
+<p>
+  {{salary|currency:'INR'}}
+</p>
+<br>
+<div>
+  <label for="ddlNumbers">Select an even number: </label>&nbsp;
+  <select id="ddlNumbers">
+    <option value="-1" selected disabled>--select--</option>
+    @for (num of (numbers|evennumberfilter:4); track $index) {
+    <option value="$index">{{num}}</option>
+    }
+  </select>
+</div>

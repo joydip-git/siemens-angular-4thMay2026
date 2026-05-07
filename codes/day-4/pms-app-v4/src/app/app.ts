@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { ProductContainer } from "./modules/products/components/product-container/product-container";
+import { Component } from '@angular/core';
+import { RouterOutlet } from "@angular/router";
+import { Navbar } from "./modules/shared/components/navbar/navbar";
 
 @Component({
   selector: 'app-root',
-  imports: [ProductContainer],
+  imports: [RouterOutlet, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('pms-app');
 }

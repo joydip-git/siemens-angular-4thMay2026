@@ -12,4 +12,5 @@ async function bootstrapApp() {
     console.log(error);
   }
 }
+
 bootstrapApp();

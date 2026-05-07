@@ -8,78 +8,42 @@ a RESTful API created with Node JS + Express JS
 4. open the "env.txt" file in the backend-server folder
 5. copy everything from that file and paste the same in your ".env" file
 
+Routing
+---------------------
+angular provides client-side routing
 
 
-GET http://127.0.0.1:3000/products
+products
+---------------
+http://localhost:4200/products -> ProductContainer (ProductFilter + ProductList)
+http://localhost:4200/products/view/{id} -> ProductDetail
+http://localhost:4200/products/edit/{id} -> EditProduct
+http://localhost:4200/products/add -> AddProduct
 
-###
-GET http://127.0.0.1:3000/products/1
+shared
+--------------
+http://localhost:4200/home -> Home
+http://localhost:4200/     -> http://localhost:4200/home -> Home
 
-###
-GET http://127.0.0.1:3000/products/100
+*			   -> PageNotFound
 
-###
-POST http://127.0.0.1:3003/products
-Content-Type: application/json
+NavBar
+LoadSpinner
 
-{
-    "productId": 6,
-    "productName": "abcd",
-    "productCode": "GMG-0042",
-    "releaseDate": "October 15, 2015",
-    "description": "Standard two-button video game controller",
-    "price": 100,
-    "starRating": 4.5,
-    "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-}
+type
+---------------
+Route -> path:'products' and component: PC
 
-###
-PUT http://127.0.0.1:3003/products/6
-Content-Type: application/json
+Routes [type Routes = Route[]]
 
-{
-    "productId": 6,
-    "productName": "test",
-    "productCode": "GMG-0042",
-    "releaseDate": "October 15, 2015",
-    "description": "Standard two-button video game controller",
-    "price": 150,
-    "starRating": 3,
-    "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-}
-
-###
-PUT http://127.0.0.1:3003/products/100
-Content-Type: application/json
-
-{
-    "productId": 100,
-    "productName": "test",
-    "productCode": "GMG-0042",
-    "releaseDate": "October 15, 2015",
-    "description": "Standard two-button video game controller",
-    "price": 150,
-    "starRating": 3,
-    "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
-}
+service
+----------------
+Router	<- array containing all he routes
 
 
-###
-DELETE http://127.0.0.1:3003/products/6
-
-###
-DELETE http://127.0.0.1:3003/products/100
-
-
-{
-	message: string
-	data: product[]|product|string|null
-}
+path		component
+-----------------------------------
+products	PC
+product/add	AP
 
 
-https://jsonplaceholder.typicode.com/todos
-
-{
-	provide: TodoService,
-	useClass: TodoService
-}

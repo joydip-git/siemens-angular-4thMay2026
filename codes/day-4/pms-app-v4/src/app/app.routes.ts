@@ -12,7 +12,7 @@ export const routes: Routes = [
         pathMatch: 'prefix',
         children: [
             {
-                path: '', component: ProductContainer
+                path: '', loadComponent: () => import('./modules/products/components/product-container/product-container').then(m => m.ProductContainer)
             },
             {
                 path: 'view/:id', component: ProductDetail

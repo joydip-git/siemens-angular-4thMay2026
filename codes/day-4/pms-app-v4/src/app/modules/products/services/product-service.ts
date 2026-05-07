@@ -35,6 +35,6 @@ export class ProductService implements IServiceContract {
   }
 
   getProduct(id: number): Observable<ApiResponse<Readonly<Product>>> {
-    throw new Error('Method not implemented.');
+    return this._http.get<ApiResponse<Readonly<Product>>>(`${this._url}/${id}`)
   }
 }

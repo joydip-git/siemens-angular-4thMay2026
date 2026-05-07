@@ -1,7 +1,7 @@
 <h2>List of Products</h2>
 <br>
 @if(!isRequestOver()){
-    <app-load-spinner></app-load-spinner>
+<app-load-spinner></app-load-spinner>
 }
 @else if (errorInfo()!=='') {
 <span>{{errorInfo()}}</span>
@@ -24,7 +24,7 @@
         @for (p of (products()|filterProduct:filterText()); track $index) {
         <tr>
             <td>
-                <img [src]="p.imageUrl" alt="NA" class="img-size-style">
+                <img [src]="p.imageUrl" alt="NA" class="img-size-style" [routerLink]="['/products','view',p.productId]">
             </td>
             <td>{{p.productName}}</td>
             <td>{{p.price}}</td>

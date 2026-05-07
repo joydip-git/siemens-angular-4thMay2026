@@ -1,1 +1,13 @@
-<p>product-detail works!</p>
+@if(!isRequestOver()){
+<app-load-spinner></app-load-spinner>
+}@else if (errorInfo()!=='') {
+<span>{{errorInfo()}}</span>
+}@else if (product()===undefined) {
+<span>No product</span>
+}@else {
+<p>
+    Details of {{product()?.productName}}
+    <br>
+    <button type="button" class="btn btn-primary" (click)="goToEdit()">Edit</button>
+</p>
+}

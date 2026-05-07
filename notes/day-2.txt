@@ -69,7 +69,9 @@ directive:
 		they start with *
 		*ngIf, *ngFor, *ngIfElse, *ngSwitch
 
-	b. attribute directive
+	b. attribute directive: used as an attribute but only extends the behavior of an element (does not manipulate DOM)
+	used without any special symbol like * or @
+	routerLink, ngModel, ngForm,..., ngClass, ngStyle
 	c. component directive -> component, used as a custom HTML tag
 
 @Directive({

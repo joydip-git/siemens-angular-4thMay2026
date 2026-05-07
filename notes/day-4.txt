@@ -15,9 +15,9 @@ angular provides client-side routing
 
 products
 ---------------
-http://localhost:4200/products -> ProductContainer (ProductFilter + ProductList)
+http://localhost:4200/products/ -> ProductContainer (ProductFilter + ProductList)
 http://localhost:4200/products/view/{id} -> ProductDetail
-http://localhost:4200/products/edit/{id} -> EditProduct
+http://localhost:4200/products/edit -> EditProduct
 http://localhost:4200/products/add -> AddProduct
 
 shared
@@ -33,17 +33,24 @@ LoadSpinner
 type
 ---------------
 Route -> path:'products' and component: PC
-
 Routes [type Routes = Route[]]
 
 service
 ----------------
 Router	<- array containing all he routes
+RouterState
+ActivatedRoute
+
+directive:
+-------------------------------------
+routerLink (attribute directive)
+
+component directive:
+-----------------------------
+router-outler
+
+{id:"1"}
 
 
-path		component
------------------------------------
-products	PC
-product/add	AP
 
 

@@ -6,10 +6,11 @@ import { PRODUCT_SERVICE_TOKEN } from '../../../../configs/constants';
 import { Subscription } from 'rxjs';
 import { ApiResponse } from '../../../../models/apirespone';
 import { LoadSpinner } from "../../../shared/components/load-spinner/load-spinner";
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-product-list',
-  imports: [FilterProductPipe, LoadSpinner],
+  imports: [FilterProductPipe, LoadSpinner, RouterLink],
   templateUrl: './product-list.html',
   styleUrl: './product-list.css',
 })
@@ -36,31 +37,27 @@ export class ProductList implements OnInit, OnDestroy {
   }
 
   fetchProducts() {
-    setTimeout(
-      () => {
-        this.fetchSubscription =
-          this.ps
-            .getProducts()
-            .subscribe({
-              next: (response: ApiResponse<Readonly<Product[]>>) => {
-                if (response.data !== null) {
-                  this.products.set(response.data)
-                  this.errorInfo.set('')
-                  this.isRequestOver.set(true)
-                } else {
-                  this.products.set([])
-                  this.errorInfo.set(response.message)
-                  this.isRequestOver.set(true)
-                }
-              },
-              error: (err) => {
-                this.products.set([])
-                this.errorInfo.set(err.message)
-                this.isRequestOver.set(true)
-              }
-            });
-      },
-      3000
-    )
+
+    this.fetchSubscription =
+      this.ps
+        .getProducts()
+        .subscribe({
+          next: (response: ApiResponse<Readonly<Product[]>>) => {
+            if (response.data !== null) {
+              this.products.set(response.data)
+              this.errorInfo.set('')
+              this.isRequestOver.set(true)
+            } else {
+              this.products.set([])
+              this.errorInfo.set(response.message)
+              this.isRequestOver.set(true)
+            }
+          },
+          error: (err) => {
+            this.products.set([])
+            this.errorInfo.set(err.message)
+            this.isRequestOver.set(true)
+          }
+        });
   }
 }

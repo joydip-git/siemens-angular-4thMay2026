@@ -1,0 +1,27 @@
+<form (submit)="submit(frm)" ngForm #frm="ngForm">
+    <div>
+        <label for="txtName">Name:&nbsp;</label>
+        <!-- <input type="text" id="txtName" name="name" [(ngModel)]="name"> -->
+        <input type="text" id="txtName" name="name" ngModel required #ctrlName="ngModel">
+    </div>
+    @if(ctrlName.errors){
+    @if(ctrlName.errors['required'] && (ctrlName.dirty || ctrlName.touched)){
+    <span>name is required</span>
+    }
+    }
+    <div>
+        <label for="txtLocation">Location:&nbsp;</label>
+        <input type="text" id="txtLocation" name="location" ngModel email required #ctrlLocation="ngModel">
+    </div>
+    @if(ctrlLocation.errors){
+    @if(ctrlLocation.errors['required'] && (ctrlLocation.dirty || ctrlLocation.touched)){
+    <span>location is required</span>
+    }
+    @if(ctrlLocation.errors['email'] && (ctrlLocation.dirty || ctrlLocation.touched)){
+    <span>value should be in email format</span>
+    }
+    }
+    <div>
+        <button type="submit" [disabled]="frm.invalid">Submit</button>
+    </div>
+</form>

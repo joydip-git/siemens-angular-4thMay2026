@@ -1,0 +1,18 @@
+/* element selector*/
+/* h2 */
+
+/* id selector*/
+
+/*#articleHeader*/
+
+.header-common-style {
+    background-color: limegreen;
+    /* font-family: 'Courier New', Courier, monospace;
+    text-align: center; */
+}
+
+.header-border-style {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: limegreen;
+}

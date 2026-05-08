@@ -41,3 +41,7 @@ export class FormsModule{
 package:
 -----------
 @angular/forms
+
+
+xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+https://forms.gle/sreLgjStHV59atmSA

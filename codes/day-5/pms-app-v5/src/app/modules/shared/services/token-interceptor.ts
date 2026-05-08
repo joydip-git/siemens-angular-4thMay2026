@@ -2,11 +2,15 @@
 //import { Inject, Injectable } from "@angular/core";
 
 import { HttpEvent, HttpHandlerFn, HttpInterceptorFn, HttpRequest } from "@angular/common/http";
+import { inject } from "@angular/core";
 import { Observable } from "rxjs";
+import { TokenStorageService } from "./token-storage.service";
 
 export const TokenInterceptor: HttpInterceptorFn = (req: HttpRequest<unknown>, next: HttpHandlerFn): Observable<HttpEvent<unknown>> => {
-    const token = sessionStorage.getItem('token')
-    if (token !== undefined && token !== null) {
+    const tokenSvc = inject(TokenStorageService)
+    //const token = sessionStorage.getItem('token')
+    const token = tokenSvc.getToken()
+    if (token !== null) {
         const tokenizedRequest = req.clone({
             headers: req.headers.append('Authorization', `Bearer ${token}`)
         })

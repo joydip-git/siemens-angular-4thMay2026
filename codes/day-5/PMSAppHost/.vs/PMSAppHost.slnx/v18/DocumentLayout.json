@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\trainings\\siemens-angular-4thMay2026\\codes\\day-5\\PMSAppHost\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04E6650D-C0F0-48B1-AA5A-5E909B492088}|PMSAppHost\\PMSAppHost.csproj|e:\\trainings\\siemens-angular-4thmay2026\\codes\\day-5\\pmsapphost\\pmsapphost\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04E6650D-C0F0-48B1-AA5A-5E909B492088}|PMSAppHost\\PMSAppHost.csproj|solutionrelative:pmsapphost\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04E6650D-C0F0-48B1-AA5A-5E909B492088}|PMSAppHost\\PMSAppHost.csproj|e:\\trainings\\siemens-angular-4thmay2026\\codes\\day-5\\pmsapphost\\pmsapphost\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04E6650D-C0F0-48B1-AA5A-5E909B492088}|PMSAppHost\\PMSAppHost.csproj|solutionrelative:pmsapphost\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04E6650D-C0F0-48B1-AA5A-5E909B492088}|PMSAppHost\\PMSAppHost.csproj|e:\\trainings\\siemens-angular-4thmay2026\\codes\\day-5\\pmsapphost\\pmsapphost\\pmsapphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{04E6650D-C0F0-48B1-AA5A-5E909B492088}|PMSAppHost\\PMSAppHost.csproj|solutionrelative:pmsapphost\\pmsapphost.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PMSAppHost",
+              "DocumentMoniker": "E:\\trainings\\siemens-angular-4thMay2026\\codes\\day-5\\PMSAppHost\\PMSAppHost\\PMSAppHost.csproj",
+              "RelativeDocumentMoniker": "PMSAppHost\\PMSAppHost.csproj",
+              "ToolTip": "E:\\trainings\\siemens-angular-4thMay2026\\codes\\day-5\\PMSAppHost\\PMSAppHost\\PMSAppHost.csproj",
+              "RelativeToolTip": "PMSAppHost\\PMSAppHost.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-08T11:19:55.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\trainings\\siemens-angular-4thMay2026\\codes\\day-5\\PMSAppHost\\PMSAppHost\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PMSAppHost\\MainWindow.xaml",
+              "ToolTip": "E:\\trainings\\siemens-angular-4thMay2026\\codes\\day-5\\PMSAppHost\\PMSAppHost\\MainWindow.xaml",
+              "RelativeToolTip": "PMSAppHost\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-08T11:15:11.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\trainings\\siemens-angular-4thMay2026\\codes\\day-5\\PMSAppHost\\PMSAppHost\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PMSAppHost\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\trainings\\siemens-angular-4thMay2026\\codes\\day-5\\PMSAppHost\\PMSAppHost\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PMSAppHost\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA9wB8AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T11:15:08.357Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

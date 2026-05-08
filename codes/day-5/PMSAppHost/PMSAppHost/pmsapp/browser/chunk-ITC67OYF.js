@@ -1,0 +1,1 @@
+import{H as o,g as r}from"./chunk-RG2VEHHC.js";var a=class e{storage=new r(null);store=this.storage.asObservable();saveToken(t){this.storage.next(t)}getToken(){return this.storage.value}removeToken(){this.storage.next(null)}static \u0275fac=function(n){return new(n||e)};static \u0275prov=o({token:e,factory:e.\u0275fac,providedIn:"root"})};export{a};

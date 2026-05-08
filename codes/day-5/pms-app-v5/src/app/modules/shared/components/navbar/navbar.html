@@ -18,6 +18,9 @@
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/products','add']">add product</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" type="button" (click)="navigate($event)">{{isLoggedin()?'Logout':'Login'}}</a>
+                </li>
             </ul>
         </div>
     </div>

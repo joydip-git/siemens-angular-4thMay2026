@@ -4,6 +4,7 @@ import { passwordValidator } from '../../validators/password-validators';
 import { AuthService } from '../../services/auth-service';
 import { User } from '../../../../models/user';
 import { ActivatedRoute, ActivatedRouteSnapshot, Router } from '@angular/router';
+import { TokenStorageService } from '../../../shared/services/token-storage.service';
 
 @Component({
   selector: 'app-login',
@@ -20,6 +21,7 @@ export class Login {
   private currentRoute = inject(ActivatedRoute)
   private router = inject(Router)
   private authSvc = inject(AuthService)
+  private tokenSvc = inject(TokenStorageService)
 
   get username() {
     return this.loginForm.get("username")
@@ -34,7 +36,8 @@ export class Login {
         .subscribe({
           next: (resp) => {
             if (resp.data !== null) {
-              sessionStorage.setItem('token', resp.data)
+              //sessionStorage.setItem('token', resp.data)
+              this.tokenSvc.saveToken(resp.data)
             } else {
               window.alert(resp.message)
             }

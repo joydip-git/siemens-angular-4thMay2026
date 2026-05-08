@@ -1,10 +1,9 @@
 import { Inject, inject, Injectable } from '@angular/core';
 import { IServiceContract } from './service-contract';
 import { Product } from '../../../models/product';
-import { productrecords } from '../../../data/productrecords';
 import { Observable } from 'rxjs';
 import { ApiResponse } from '../../../models/apirespone';
-import { PRODUCT_API_URL_TOKEN, PRODUCT_SERVICE_TOKEN } from '../../../configs/constants';
+import { PRODUCT_API_URL_TOKEN } from '../../../configs/constants';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
@@ -19,15 +18,15 @@ export class ProductService implements IServiceContract {
   // }
 
   addProduct(p: Product): Observable<ApiResponse<Readonly<Product[]>>> {
-    throw new Error('Method not implemented.');
+    return this._http.post<ApiResponse<Readonly<Product[]>>>(this._url, p);
   }
 
   updateProduct(id: number, p: Product): Observable<ApiResponse<Readonly<Product[]>>> {
-    throw new Error('Method not implemented.');
+    return this._http.put<ApiResponse<Readonly<Product[]>>>(`${this._url}\${id}`, p)
   }
 
   deleteProduct(id: number): Observable<ApiResponse<Readonly<Product[]>>> {
-    throw new Error('Method not implemented.');
+    return this._http.delete<ApiResponse<Readonly<Product[]>>>(`${this._url}\${id}`)
   }
 
   getProducts(): Observable<ApiResponse<Readonly<Product[]>>> {

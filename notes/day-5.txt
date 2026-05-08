@@ -3,13 +3,13 @@ Form Handling
 1. template driven form
 	controlling form data handling from the template of the form, rather than code
 	in this aspect you use several attribute directives to achieve that
-	ngForm => creates formgroup object and binds to the <form> element and suppresses the behavior of form server side submission
+	ngForm => creates formgroup object and binds to theo <form> element and suppresses the behavior of form server side submission
 	ngModel => creates formcontrol object and binds to the <input> element
 2. reactive form
 
 attribute directive:
 ----------------------------
-ngModel
+ngModel, formControl
 
 @Directive({
 	selector:'[ngModel]',
@@ -20,7 +20,7 @@ export class NgModelDirective{
 
 module name
 --------------------
-FormsModule
+FormsModule, ReactiveFormsModule
 
 @NgModule({
 	//register components, directives and pipes
